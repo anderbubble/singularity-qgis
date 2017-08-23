@@ -8,6 +8,8 @@ From: fedora:latest
 
 %post
 
+    echo "Updating Fedora"
+    dnf -y update
+
     echo "Installing QGIS"
-    dnf update
     dnf -y install qgis qgis-python qgis-grass qgis-server
